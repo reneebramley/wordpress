@@ -1,0 +1,20 @@
+<!-- ADD TO HEADER.php -->
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    
+<!-- CREATE a CAROUSEL.JS FILE IN THEME THEN ADD TO FOOTER.php -->
+<script>
+        	$(document).ready(function(){
+        	    $(".gallery").addClass( 'owl-carousel owl-theme');
+                $(".gallery").owlCarousel( {
+                        items                   : 1,
+                        singleItem              : true,
+                        autoHeight              : true
+                });
+        	});
+</script>
+
+<!-- ADD TO FOOTER.php -->
+<script src="<?php bloginfo( 'template_directory' ); ?>/js/carousel.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
